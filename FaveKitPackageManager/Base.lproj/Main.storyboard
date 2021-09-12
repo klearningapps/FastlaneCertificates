@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FaveKitPackageManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ww-G9-5xV">
+                                <rect key="frame" x="41.5" y="418" width="331" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nB8-Lk-Dc0">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Hit Me"/>
+                                        <connections>
+                                            <action selector="hitMeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYK-69-3ty"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.14901960780000001" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Jw-YK-Am8"/>
+                                    <constraint firstItem="nB8-Lk-Dc0" firstAttribute="leading" secondItem="7Ww-G9-5xV" secondAttribute="leading" id="Jg0-g5-1KI"/>
+                                    <constraint firstItem="nB8-Lk-Dc0" firstAttribute="top" secondItem="7Ww-G9-5xV" secondAttribute="top" id="Pf2-Pt-AR5"/>
+                                    <constraint firstAttribute="trailing" secondItem="nB8-Lk-Dc0" secondAttribute="trailing" id="WSC-mk-0HA"/>
+                                    <constraint firstAttribute="bottom" secondItem="nB8-Lk-Dc0" secondAttribute="bottom" id="xz6-pp-p7P"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C19-fo-pXU">
+                                <rect key="frame" x="190.5" y="332" width="33.5" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.87058823529999996" green="0.12549019610000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C19-fo-pXU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1bd-oM-f9N"/>
+                            <constraint firstItem="7Ww-G9-5xV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1mH-IY-dd5"/>
+                            <constraint firstItem="7Ww-G9-5xV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="69w-Pq-kcb"/>
+                            <constraint firstItem="nB8-Lk-Dc0" firstAttribute="top" secondItem="C19-fo-pXU" secondAttribute="bottom" constant="50" id="hES-oo-d5q"/>
+                            <constraint firstItem="7Ww-G9-5xV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="w6D-dz-ldP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hitLabel" destination="C19-fo-pXU" id="IGh-Dj-XOj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
